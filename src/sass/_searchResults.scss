@@ -1,0 +1,41 @@
+.search-results {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  margin:10rem 2rem 0 0;
+  position: fixed;
+  height: 100vh;
+  width: 25%;
+  z-index: 99;
+  
+}
+
+.results {
+  list-style: none;
+  margin-bottom: 2rem;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+}
+
+.pagination {
+  margin-top: auto;
+  padding: 0 3.5rem;
+
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  &__btn {
+    &--prev {
+      float: left;
+    }
+    &--next {
+      float: right;
+    }
+  }
+}
+
+
